@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../utils/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { removeUser, addUser } from "../utils/userslice";
@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { LOGO, PROFILE_PIC } from "../utils/Constants";
 
 const Header = () => {
+  const auth = getAuth();
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
