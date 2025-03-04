@@ -20,6 +20,17 @@
 - Bug Fix :signup user display name means profile update
 - Bug Fix : if the user is not logged in Redirect /browse to Login Page and vice versa  
 - Unsubscribe to the onAuthStateChanged Callback 
+- add hardcoded values in constants file
+- register tmdb api & create an app & get access token 
+- get data from tmdb now playing movies list
+- custom hool for palying movies
+- create movieslice
+- update store with movie data
+- Planing for MainContainer and SecondaryContainer
+- Fetch Data for trailerVideo 
+- Update the store with trailer Video Data
+- Embeded the youtube video and make it autoplay and mute
+- Tailwind classes to make MainContainer  look awesome 
 
 # Features 
 

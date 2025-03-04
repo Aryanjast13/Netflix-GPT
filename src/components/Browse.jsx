@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./Header";
+import { API_OPTIONS } from "../utils/Constants";
+import { useDispatch } from "react-redux";
+import { addNowPlayingMovies } from "../utils/movieSlice";
+import useNowPlayingMovies from "../Hooks/useNowPlayingMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
+  useNowPlayingMovies();
+
   return (
     <div>
       <Header />
-      <div className="w-screen">
-        <iframe
-          className="w-screen h-screen aspect-auto"
-          src="https://www.youtube.com/embed/hXzcyx9V0xw?&loop=1&autoplay=1&mute=1&"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-      </div>
+      <MainContainer />
+      <SecondaryContainer />
+      {/* 
+           - Main Container
+             - Video Background 
+             - Video Titile
+           - Secondary container
+             - movie list * n
+               -  movie cards * n
+          
+      
+       */}
     </div>
   );
 };

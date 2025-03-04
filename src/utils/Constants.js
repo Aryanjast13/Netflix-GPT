@@ -3,3 +3,13 @@ export const LOGO =
 
 export const PROFILE_PIC =
   "https://occ-0-2590-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABeuqjuQsRgqEDlibtJTI5BMf8IxhLlLOeIT6xI4TL57mqv7XHja43gx02S8pZVe8JNGRQXjnrUk1VcsTXqi83tFKPI6OR3k.png?r=bd7";
+
+
+  export const API_OPTIONS = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNWM0ODRlY2VjNTA5ZjFmYzI4MmQzZjEzNDIyY2M2OCIsIm5iZiI6MTc0MDg0NTI3OC4wODE5OTk4LCJzdWIiOiI2N2MzMzBkZTU4NTU5MTQ1MjMzZjcyMWQiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0._CNy5hDx-jtleZMButRiqP3JH6XCuR_5eLkv4ae3R5s",
+    },
+  };
